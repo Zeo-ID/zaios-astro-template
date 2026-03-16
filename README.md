@@ -163,12 +163,10 @@ Dieses Projekt erhaelt automatisch Updates vom ZAIOS Astro Template via GitHub A
 
 ### Einrichtung (einmalig)
 
-1. **TEMPLATE_TOKEN** als Repository Secret anlegen:
-   - Settings > Secrets > Actions > New Repository Secret
-   - Name: `TEMPLATE_TOKEN`
-   - Value: GitHub PAT mit `repo` Scope (Zugriff auf `Zeo-ID/zaios-astro-template`)
-
-2. Die Workflow-Datei `.github/workflows/sync-template.yml` ist bereits enthalten.
+1. Die Workflow-Datei `.github/workflows/sync-template.yml` ist bereits enthalten.
+2. In Repo Settings > Actions > General > Workflow permissions:
+   - "Read and write permissions" aktivieren
+   - "Allow GitHub Actions to create and approve pull requests" aktivieren
 
 ### Wie es funktioniert
 
